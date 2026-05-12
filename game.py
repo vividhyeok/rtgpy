@@ -257,11 +257,15 @@ class RhythmGame:
 
         # 폰트
         pygame.font.init()
-        self.font_big   = pygame.font.SysFont("segoeui", 42, bold=True)
-        self.font_mid   = pygame.font.SysFont("segoeui", 28, bold=True)
-        self.font_small = pygame.font.SysFont("segoeui", 22)
-        self.font_key   = pygame.font.SysFont("segoeui", 30, bold=True)
-        self.font_score = pygame.font.SysFont("segoeui", 36, bold=True)
+        self.font_big   = pygame.font.Font(None, 42)
+        self.font_big.set_bold(True)
+        self.font_mid   = pygame.font.Font(None, 28)
+        self.font_mid.set_bold(True)
+        self.font_small = pygame.font.Font(None, 22)
+        self.font_key   = pygame.font.Font(None, 30)
+        self.font_key.set_bold(True)
+        self.font_score = pygame.font.Font(None, 36)
+        self.font_score.set_bold(True)
 
         self.reset()
 
